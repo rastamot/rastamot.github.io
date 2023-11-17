@@ -40,7 +40,7 @@ header{
     width: 135px;
     height: auto;
 }
-.navbar{
+.navbar ul{
     display: flex;
 }
 .navbar a{
@@ -51,13 +51,6 @@ header{
     margin: 0 2px;
     border-radius: 0.5rem;
     transition: all .40s ease;
-}
-.navbar #eshop2{
-    color:#31b1e6;
-    font-weight: 800;
-}
-.navbar #eshop a:hover{
-    color: var(--text-color);
 }
 .navbar a:hover{
     background: var(--main-color);

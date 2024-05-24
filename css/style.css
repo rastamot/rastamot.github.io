@@ -6,7 +6,6 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 :root{
@@ -22,6 +21,8 @@
 body{
     background: var(--bg-color);
     color: var(--text-color);
+    max-width: 100%;
+    overflow-x: hidden;
 }
 header{
     position: fixed;

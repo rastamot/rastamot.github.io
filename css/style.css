@@ -428,6 +428,37 @@ form textarea{
 }
 @media (max-width: 830px){
 
+
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: -600px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #12141c;
+        text-align: left;
+        transition: all .40s ease;
+    }
+    .navbar a{
+        display: block;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .navbar.active{
+        top: 100%;
+    }
+    :root{
+        --h1-font: 3.7rem;
+        --h2-font: 2.7rem;
+    }
+}
+
+@media (max-width: 750px){
+
     .home-image{
         display: none;
     }

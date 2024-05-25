@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Sriracha','Quicksand', sans-serif;
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
@@ -16,7 +16,7 @@
     --other-color: #12141c;
     --h1-font: 5.2rem;
     --h2-font: 3.5rem;
-    --p-font: 1.1rem;
+    --p-font: 1.5rem;
 }
 body{
     background: var(--bg-color);
@@ -43,7 +43,26 @@ header{
     height: auto;
 }
 .navbar ul{
+    list-style: none;
+    flex-wrap: nowrap;
     display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; /* Pro plynulé posouvání na mobilních zařízeních */
+    scrollbar-width: none; /* Skryje posuvník ve Firefoxu */
+    white-space: nowrap; /* Zabrání zalomení položek menu */
+    padding: 0.5rem; /* Přidání malého vnitřního odsazení pro vizuální efekt */
+}
+
+.navbar ul li{
+    display: inline-block;
+    border-radius: 0.5rem;
 }
 .navbar a{
     color: var(--second-color);
@@ -53,6 +72,7 @@ header{
     margin: 0 2px;
     border-radius: 0.5rem;
     transition: all .40s ease;
+    text-decoration: none;
 }
 .navbar a:hover{
     background: var(--main-color);
@@ -117,11 +137,11 @@ span{
 }
 .home-text h4{
     color: var(--main-color);
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
 }
 .home-text h3{
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
     margin-bottom: 3rem;
 }
@@ -129,7 +149,7 @@ span{
     display: inline-block;
     padding: 14px 40px;
     border-radius: 0.5rem;
-    font-size: 17px;
+    font-size: 24px;
     font-weight: 800;
     background: var(--main-color);
     color: var(--text-color);
@@ -156,7 +176,7 @@ header.sticky{
 .about-text h4{
     margin: 10px 0;
     color: var(--main-color);
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
 }
 .about-text h2{
@@ -166,7 +186,6 @@ header.sticky{
     color: var(--second-color);
     font-size: var(--p-font);
     line-height: 30px;
-    font-weight: 600;
     margin-bottom: 2rem;
 }
 .about-gri{
@@ -227,7 +246,7 @@ header.sticky{
     color: var(--second-color);
     font-size: var(--p-font);
     line-height: 30px;
-    font-weight: 600;
+    
 }
 .box:hover{
     transform: scale(1.01) translateY(-5px);
@@ -316,6 +335,7 @@ header.sticky{
     display: block;
 }
 .contact-list li a{
+    cursor: default;
     display: block;
     color: var(--second-color);
     font-size: var(--p-font);
@@ -406,11 +426,17 @@ form textarea{
         padding: 130px 3% 60px;
     }
 }
-@media (max-width: 970px){
+@media (max-width: 1050px){
     :root{
         --h1-font: 4.2rem;
         --h2-font: 2.9rem;
-        --p-font: 1rem;
+        --p-font: 1.2rem;
+    }
+    header{
+        padding: 12px 3%;
+    }
+    header.sticky{
+        padding: 6px 3%;
     }
     section{
         padding: 70px 3% 60px;
@@ -428,8 +454,9 @@ form textarea{
         grid-template-columns: 1fr;
     }
 }
-@media (max-width: 830px){
 
+
+@media (max-width: 935px){
 
     #menu-icon{
         display: block;
@@ -442,11 +469,12 @@ form textarea{
         display: flex;
         flex-direction: column;
         background: #12141c;
-        text-align: left;
+        text-align: center;
         transition: all .40s ease;
     }
     .navbar a{
         display: block;
+        color: #fff;
         padding: 1rem;
         margin: 1rem;
     }
@@ -479,13 +507,14 @@ form textarea{
         display: flex;
         flex-direction: column;
         background: #12141c;
-        text-align: left;
+        text-align: center;
         transition: all .40s ease;
     }
     .navbar a{
         display: block;
         padding: 1rem;
         margin: 1rem;
+        color: #fff;
     }
     .navbar.active{
         top: 100%;

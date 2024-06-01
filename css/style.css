@@ -270,7 +270,7 @@ header.sticky{
 .portfolio-content a{
     color: inherit;
 }
-.row img{
+/*.row img{
     height: auto;
     width: 100%;
     transform: scale(1.2);
@@ -283,12 +283,20 @@ header.sticky{
     text-align: center;
     border-radius: 0.8rem;
     transition: all .40s ease;
+    min-height: 550px;
 }
+.icon{
+    margin-bottom: 20px;
+}
+
 .main-row{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 1rem;
+    justify-content: space-between;
+}*/
+.row-text{
+    margin-bottom: 10px;
 }
 .row h3{
     font-size: 25px;
@@ -301,6 +309,52 @@ header.sticky{
     font-weight: 500;
     letter-spacing: 1px;
 }
+.row {
+    position: relative;
+    padding: 25px;
+    background: #F2F2F2;
+    border-radius: 0.8rem;
+    transition: all .40s ease;
+    min-height: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.icon {
+    transform: scale(1.2);
+    max-width: 100%;
+    height: auto;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.text-container {
+    width: 100%;
+    margin-top: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .row {
+    flex: 1;
+    margin: 0 10px;
+}
+/**/
 .row:hover{
     transform: scale(1.01) translateY(-5px);
     cursor: pointer;

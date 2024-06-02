@@ -236,22 +236,32 @@ header.sticky{
     transition: all .40s ease;
     cursor: default;
     border-radius: 0.8rem;
+    text-align: center;
 }
 .box img{
     width: 250px;
     height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.img-service{
+    min-height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .box h3{
     font-size: 24px;
     font-weight: 600;
     margin: 15px 0;
     transition: all .40s ease;
+    text-align: justify;
 }
 .box p{
     color: var(--second-color);
     font-size: var(--p-font);
     line-height: 30px;
-    
+    text-align: justify;
 }
 .box:hover{
     transform: scale(1.01) translateY(-5px);
@@ -354,7 +364,6 @@ header.sticky{
     flex: 1;
     margin: 0 10px;
 }
-/**/
 .row:hover{
     transform: scale(1.01) translateY(-5px);
     cursor: pointer;

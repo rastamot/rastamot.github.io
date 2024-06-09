@@ -209,6 +209,9 @@ header.sticky{
     max-width: 460px;
     transform: scale(1.5);
 }
+.about-img.mirror img{
+    margin-left: 150px;
+}
 .main-text{
     text-align: center;
 }
@@ -222,12 +225,16 @@ header.sticky{
     font-weight: 600;
 }
 .services-content{
-    display: grid;
+    /*display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     align-items: center;
-    text-align: justify;
+    text-align: justify;*/
     gap: 2rem;
     margin-top: 5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .box{
     padding: 45px;
@@ -237,6 +244,11 @@ header.sticky{
     cursor: default;
     border-radius: 0.8rem;
     text-align: center;
+
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .box img{
     width: 250px;
@@ -245,7 +257,7 @@ header.sticky{
     margin: 0 auto;
 }
 .img-service{
-    min-height: 340px;
+    min-height: 330px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -262,6 +274,8 @@ header.sticky{
     font-size: var(--p-font);
     line-height: 30px;
     text-align: justify;
+
+    flex-grow: 1;
 }
 .box:hover{
     transform: scale(1.01) translateY(-5px);
@@ -368,6 +382,39 @@ header.sticky{
     transform: scale(1.01) translateY(-5px);
     cursor: pointer;
 }
+
+.row-bold{
+    font-weight: bold;
+}
+
+.row-bold-button{
+    /*font-weight: bold;*/
+    background: var(--main-color); 
+    color: var(--text-color);
+    text-align: center;
+    /*padding: 15px;*/
+    font-size: 24px;
+    border-radius: 0.8rem;
+
+    margin-top: auto;
+    display: block;
+    text-decoration: none;
+
+    
+    padding: 14px 40px;
+    font-weight: 800;
+    border: 1px solid var(--main-color);
+    transition: all .40s ease;
+}
+
+.row-bold-button:hover{
+    transform: scale(1.01) translateY(-5px);
+    background: transparent;
+    border: 1px solid var(--main-color);
+    font-weight: bold;
+}
+
+
 .contact{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -377,7 +424,7 @@ header.sticky{
 .contact-text h4{
     margin: 15px 0;
     color: var(--main-color);
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
 }
 .contact-text h2{
@@ -454,7 +501,7 @@ form textarea{
 }
 .contact-form form .send{
     display: inline-block;
-    font-size: 17px;
+    font-size: 24px;
     font-weight: 500;
     background: var(--main-color);
     color: var(--text-color);
@@ -462,6 +509,7 @@ form textarea{
     transition: all .40s ease;
     cursor: pointer;
 }
+
 .last-text{
     text-align: center;
     padding: 15px;
@@ -484,6 +532,7 @@ form textarea{
 }
 
 @media (max-width: 1325px){
+
     header{
         padding: 16px 3%;
     }
@@ -520,6 +569,10 @@ form textarea{
     }
     .contact{
         grid-template-columns: 1fr;
+    }
+    .about-img.mirror img{
+        margin-left: 0px;
+        margin-top: 50px;
     }
 }
 
@@ -595,4 +648,178 @@ form textarea{
         --h1-font: 3.7rem;
         --h2-font: 2.7rem;
     }
+}
+
+/* Nová sekce pro další files*/
+
+.home2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(../img/background_img/background_main_hlavni.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    width: 100%;
+
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.home-text2 {
+    flex: none;
+}
+
+.home-image2 {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home-image2 img {
+    max-width: 400px;
+    height: auto;
+}
+
+.home-text2 h1{
+    margin: 20px 0;
+    font-size: var(--h1-font);
+    font-weight: bold;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+span{
+    color: var(--main-color);
+}
+.home-text2 h3{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+/* Stylování sekce pro výpis lekcí */
+.lessons {
+    padding: 80px 16%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.filters {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.filters label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+
+.filters select, .filters button {
+    padding: 10px;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    /*font-size: var(--p-font);*/
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s;
+
+    font-size: 1.2rem;
+}
+
+.filters button {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.filters button:hover {
+    background-color: rgba(232,61,149,0.4);
+    border: 1px solid var(--main-color);
+    font-weight: bold;
+}
+
+.lessons-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.lessons-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lessons-table th {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--second-color);
+    font-size: var(--p-font);
+}
+.lessons-table td{
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--second-color);
+    font-size: 1.3rem;
+}
+
+.lessons-table th {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.lessons-table tr:hover {
+    background-color: rgba(232,61,149,0.2); 
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+    display: inline-block;
+    border-radius: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 800;
+    background: var(--main-color);
+    color: var(--text-color);
+    border: 1px solid var(--main-color);
+    transition: all .40s ease;
+}
+
+.signup-btn:hover {
+    background-color: rgba(232,61,149,0.4);
+    border: 1px solid var(--main-color);
+    font-weight: bold;
 }

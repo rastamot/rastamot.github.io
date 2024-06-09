@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Eruditio - vzdělávací lekce</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/x-icon" href="img/Favicon.png">
+
+    </head>
+    <body>
+
+        <header>
+            <a href="#" class="logo"><img src="img/logo.png" alt="Logo"></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <ul>
+                        <li><a href="index.html">Hlavní stránka</a></li>
+                        <li><a href="#lessons">Nabídka lekcí</a></li>
+                        <li><a href="#indi">Individuál</a></li>
+                        <li><a href="#skup">Skupiny</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="home2" id="home">
+            <div class="container2">
+                <div class="home-text2">
+                    <h3>Lekce v roce</h3>
+                    <h1><span>2024 - 2025</span></h1>
+                </div>
+                <div class="home-image2">
+                    <img src="img/About.png" alt="Obrázek vzdělávací agentury">
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="lessons" id="lessons">
+            <div class="container3">
+                <div class="main-text">
+                    <h2>Výpis dostupných lekcí</h2>
+                </div>
+                <div class="filters">
+                    <label for="city-filter">Město:</label>
+                    <select id="city-filter">
+                        <option value="all">Vše</option>
+                        <option value="Černošice">Černošice</option>
+                        <option value="Hostivice">Hostivice</option>
+                        <option value="Říčany">Říčany</option>
+                        <!-- Další města -->
+                    </select>
+    
+                    <label for="subject-filter">Předmět:</label>
+                    <select id="subject-filter">
+                        <option value="all">Vše</option>
+                        <option value="Angličtina">Angličtina</option>
+                        <option value="Čeština">Čeština</option>
+                        <option value="Matematika">Matematika</option>
+                        <!-- Další předměty -->
+                    </select>
+    
+                    <button id="filter-button">Filtrovat</button>
+                </div>
+                <div class="lessons-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Kurz</th>
+                                <th>Předmět</th>
+                                <th>Město</th>
+                                <th>Počet studentů</th>
+                                <th>Cena za lekci</th>
+                                <th>Stav</th>
+                                <!--<th>Čas</th><th>Termín/počet lekcí</th>-->
+                            </tr>
+                        </thead>
+                        <tbody id="lessons-body">
+                            <!-- Ukázkový řádek -->
+                            <tr>
+                                <td>Matematika pro začátečníky</td>
+                                <td>Angličtina</td>
+                                <td>Hostivice</td>
+                                <td>10</td>
+                                <td>500 Kč</td>
+                                <td><a href="#" class="signup-btn">Přihlásit se</a></td>
+                            </tr>
+                            <!-- Další řádky budou přidány zde -->
+                            <tr>
+                                <td>Matematika pro začátečníky</td>
+                                <td>Matematika</td>
+                                <td>Říčany</td>
+                                <td>10</td>
+                                <td>500 Kč</td>
+                                <td><a href="#" class="signup-btn">Přihlásit se</a></td>
+                            </tr>
+                            <tr>
+                                <td>Matematika pro začátečníky</td>
+                                <td>Matematika</td>
+                                <td>Hostivice</td>
+                                <td>10</td>
+                                <td>500 Kč</td>
+                                <td><a href="#" class="signup-btn">Přihlásit se</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="indi">
+            <div class="about-img">
+                <img src="img/header1.png" alt="Obrázek o nás">
+            </div>
+        
+            <div class="about-text">
+                <h2>Individuální lekce</h2>
+                <h4>Vzdělání je cesta k úspěchu</h4>
+                <p>Již v roce 2023 jsme si řekli, že dnešní školství neposkytuje studentům takové vzdělání, které by mělo.<br /><br />
+                    Rozhodli jsme se, že tento fakt chceme změnit, a proto se od té doby intenzivně věnujeme přípravě našich studentů na boj s jejich životními překážkami, na které naráží.<br /><br />
+                    Našima rukama prošlo více než 30 studentů, kteří dosáhli svých požadovaných cílů.<br /><br />
+                    A co Vám můžeme vlastně nabídnout? Podívejte se níže.
+                </p>
+                <div class="about-gri">
+                    <div class="about-in">
+                        <h5>1. Individuální a skupinové lekce</h5>
+                    </div>
+        
+                    <div class="about-in">
+                        <h5>2. Příprava na přijímací a jazykové zkoušky</h5>
+                    </div>
+        
+                    <div class="about-in">
+                        <h5>3. Kritické myšlení a aktivní podpora samostudia</h5>
+                    </div>
+        
+                    <div class="about-in">
+                        <h5>4. Moderní způsob výuky za pomoci technologií</h5>
+                    </div>
+                </div>
+                <a href="#contact" class="btn">Kontaktujte nás</a>
+            </div>
+        </section>
+
+        <section class="about" id="skup">
+
+            <div class="about-text">
+                <h2>Skupinová lekce</h2>
+                <h4>Vzdělání je cesta k úspěchu</h4>
+                <p>Již v roce 2023 jsme si řekli, že dnešní školství neposkytuje studentům takové vzdělání, které by mělo.<br /><br />
+                    Rozhodli jsme se, že tento fakt chceme změnit, a proto se od té doby intenzivně věnujeme přípravě našich studentů na boj s jejich životními překážkami, na které naráží.<br /><br />
+                    Našima rukama prošlo více než 30 studentů, kteří dosáhli svých požadovaných cílů.<br /><br />
+                    A co Vám můžeme vlastně nabídnout? Podívejte se níže.
+                </p>
+                <div class="about-gri">
+                    <div class="about-in">
+                        <h5>1. Individuální a skupinové lekce</h5>
+                    </div>
+        
+                    <div class="about-in">
+                        <h5>2. Příprava na přijímací a jazykové zkoušky</h5>
+                    </div>
+        
+                    <div class="about-in">
+                        <h5>3. Kritické myšlení a aktivní podpora samostudia</h5>
+                    </div>
+        
+                    <div class="about-in">
+                        <h5>4. Moderní způsob výuky za pomoci technologií</h5>
+                    </div>
+                </div>
+                <a href="#contact" class="btn">Kontaktujte nás</a>
+            </div>
+
+            <div class="about-img mirror">
+                <img src="img/header1.png" alt="Obrázek o nás">
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-text">
+                <h2>Kontaktujte nás</h2>
+                <h4>Máte na nás otázky?</h4>
+                <!--<p>Pokud máte jakékoli dotazy nebo zájem o naše vzdělávací služby, neváhejte nás kontaktovat. Jsme připraveni vám poskytnout veškeré potřebné informace a odpovědět na vaše dotazy. Můžete nás kontaktovat prostřednictvím telefonu, e-mailu nebo vyplněním kontaktního formuláře. Těšíme se na vaši zprávu a rádi vám pomůžeme při dosahování vašich vzdělávacích cílů.</p>-->
+                <p>Kontaktní výuka probíhá v Říčanech, Hostivici a Černošicích.<br /><br />
+                    Jakékoliv dotazy zodpovíme na níže uvedeném e-mailu či telefonních číslech.<br /><br />
+                    Využít můžete také kontaktní formulář. Po odeslání se Vám v nejbližší době ozveme.
+                </p>
+                <div class="contact-list">
+                    <ul>
+                        <li><a href="javascript:;">Hostivice - Říčany - Černošice</a></li>
+                        <li><a href="javascript:;">eruditiocz@gmail.com</a></li>
+                        <li><a href="javascript:;">+420 739 820 084</a></li>
+                        <li><a href="javascript:;">+420 776 471 888</a></li>
+                    </ul>
+                </div>
+                <!--<div class="contact-icons">
+                    <a href="https://www.instagram.com/eruditiocz/"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@eruditiocz"><i class="bx bxl-tiktok"></i></a>
+                </div>-->
+            </div>
+        
+            <div class="contact-form">
+                
+                <form action="https://formsubmit.co/eruditiocz@gmail.com" method="POST">
+                    <input name="text" type="text" placeholder="Vaše jméno" required>
+                    <input name="email" type="email" placeholder="Váš e-mail" required>
+                    <input name="telefon" type="text" placeholder="Váš telefon">
+                    <textarea name="textarea" id="textarea" cols="40" rows="10" placeholder="Text zprávy" required></textarea>
+                    <input type="submit" value="Odeslat" class="send">
+                </form>
+            </div>
+        </section>
+
+        <div class="last-text">
+            <p>&copy; Developed by Eruditio</p>
+        </div>
+
+    <!--Scroll-Top-->
+    <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+    
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--custom js link-->
+    <script src="js/script.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+
+    </body>
+</html>

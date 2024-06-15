@@ -52,7 +52,7 @@
         <section class="lessons" id="lessons">
             <div class="container3">
                 <div class="main-text">
-                    <h2>Výpis dostupných lekcí</h2>
+                    <h2>Výpis kurzů a lekcí</h2>
                 </div>
                 <div class="filters">
                     <label for="city-filter">Město:</label>
@@ -78,12 +78,15 @@
                 <div class="lessons-table">
                     <table>
                         <thead>
-                            <tr>
+                            <tr class="hlava">
                                 <th>Kurz</th>
-                                <th>Předmět</th>
+                                <th class="hlava">Předmět</th>
+                                <th>Lekcí</th>
                                 <th>Město</th>
-                                <th>Počet studentů</th>
-                                <th>Cena za lekci</th>
+                                <th>Den</th>
+                                <th>Čas</th>
+                                <th>Termín</th>
+                                <th>Cena</th>
                                 <th>Stav</th>
                                 <!--<th>Čas</th><th>Termín/počet lekcí</th>-->
                             </tr>
@@ -91,29 +94,38 @@
                         <tbody id="lessons-body">
                             <!-- Ukázkový řádek -->
                             <tr>
-                                <td>Matematika pro začátečníky</td>
-                                <td>Angličtina</td>
-                                <td>Hostivice</td>
-                                <td>10</td>
-                                <td>500 Kč</td>
-                                <td><a href="#" class="signup-btn">Přihlásit se</a></td>
+                                <td data-label="Kurz">Angličtina pro začátečníky</td>
+                                <td class="hlava" data-label="Předmět">Angličtina</td>
+                                <td data-label="Lekcí">32</td>
+                                <td data-label="Město">Hostivice</td>
+                                <td data-label="Den">Po</td>
+                                <td data-label="Čas">18:00-19:00</td>
+                                <td data-label="Termín">01.10.-12.12.</td>
+                                <td data-label="Cena">500 Kč</td>
+                                <td data-label="Stav"><a href="#" class="signup-btn">Přihlásit se</a></td>
                             </tr>
                             <!-- Další řádky budou přidány zde -->
                             <tr>
-                                <td>Matematika pro začátečníky</td>
-                                <td>Matematika</td>
-                                <td>Říčany</td>
-                                <td>10</td>
-                                <td>500 Kč</td>
-                                <td><a href="#" class="signup-btn">Přihlásit se</a></td>
+                                <td data-label="Kurz">Matematika pro začátečníky</td>
+                                <td class="hlava" data-label="Předmět">Matematika</td>
+                                <td data-label="Lekcí">32</td>
+                                <td data-label="Město">Říčany</td>
+                                <td data-label="Den">Po</td>
+                                <td data-label="Čas">18:00-19:00</td>
+                                <td data-label="Termín">01.10.-12.12.</td>
+                                <td data-label="Cena">500 Kč</td>
+                                <td data-label="Stav"><a href="#" class="signup-btn">Přihlásit se</a></td>
                             </tr>
                             <tr>
-                                <td>Matematika pro začátečníky</td>
-                                <td>Matematika</td>
-                                <td>Hostivice</td>
-                                <td>10</td>
-                                <td>500 Kč</td>
-                                <td><a href="#" class="signup-btn">Přihlásit se</a></td>
+                                <td data-label="Kurz">Matematika pro začátečníky</td>
+                                <td class="hlava" data-label="Předmět">Matematika</td>
+                                <td data-label="Lekcí">32</td>
+                                <td data-label="Město">Hostivice</td>
+                                <td data-label="Den">Po</td>
+                                <td data-label="Čas">18:00-19:00</td>
+                                <td data-label="Termín">01.10.-12.12.</td>
+                                <td data-label="Cena">500 Kč</td>
+                                <td data-label="Stav"><a href="#" class="signup-btn">Přihlásit se</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -123,7 +135,7 @@
 
         <section class="about" id="indi">
             <div class="about-img">
-                <img src="img/header1.png" alt="Obrázek o nás">
+                <img src="img/indiv.png" alt="Obrázek Individuální lekce">
             </div>
         
             <div class="about-text">
@@ -186,7 +198,7 @@
             </div>
 
             <div class="about-img mirror">
-                <img src="img/header1.png" alt="Obrázek o nás">
+                <img src="img/skup.png" alt="Obrázek Skupinové lekce">
             </div>
 
         </section>

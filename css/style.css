@@ -6,6 +6,7 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
+
 }
 
 :root{
@@ -574,6 +575,51 @@ form textarea{
         margin-left: 0px;
         margin-top: 50px;
     }
+
+    .lessons-table table,
+    .lessons-table thead,
+    .lessons-table tbody,
+    .lessons-table th,
+    .lessons-table td,
+    .lessons-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .lessons-table tr {
+        margin-bottom: 15px;
+        border: 1px solid var(--second-color);
+        padding: 10px;
+        border-radius: 5px;
+
+    }
+
+    .lessons-table thead{
+        display: none;
+    }
+    
+
+    .lessons-table th {
+        display: none; /* Skryje hlavičku tabulky */
+    }
+
+    .lessons-table td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .lessons-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 20px;
+        width: calc(50% - 20px);
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
 }
 
 
@@ -581,6 +627,9 @@ form textarea{
 
     #menu-icon{
         display: block;
+        position: fixed;
+        top: 2.1rem;
+        right: 2.1rem;
     }
     .navbar{
         position: absolute;
@@ -605,6 +654,10 @@ form textarea{
     :root{
         --h1-font: 3.7rem;
         --h2-font: 2.7rem;
+    }
+    .row-bold-button{
+        padding: 14px 30px;
+        font-size: 22px;
     }
 }
 
@@ -621,9 +674,6 @@ form textarea{
         display: none;
     }
 
-    #menu-icon{
-        display: block;
-    }
     .navbar{
         position: absolute;
         top: -600px;
@@ -648,6 +698,27 @@ form textarea{
         --h1-font: 3.7rem;
         --h2-font: 2.7rem;
     }
+
+    .lessons-table td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        font-size: 1rem;
+    }
+
+    .lessons-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0px;
+        width: calc(50% - 20px);
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-right: 50px;
+    }
+
 }
 
 /* Nová sekce pro další files*/
@@ -732,6 +803,8 @@ span{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    flex-wrap: wrap;
 }
 
 .filters label {
@@ -790,6 +863,11 @@ span{
     font-size: 1.3rem;
 }
 
+.lessons-table th.hlava, 
+.lessons-table td.hlava{
+    display: none;
+}
+
 .lessons-table th {
     background-color: var(--main-color);
     color: var(--text-color);
@@ -803,14 +881,14 @@ span{
 .signup-btn {
     background-color: var(--main-color);
     color: var(--text-color);
-    padding: 10px 20px;
+    padding: 5px 15px;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s;
 
     display: inline-block;
     border-radius: 0.8rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 800;
     background: var(--main-color);
     color: var(--text-color);

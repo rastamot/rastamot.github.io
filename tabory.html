@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Eruditio - vzdělávací lekce</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/x-icon" href="img/Favicon.png">
+
+    </head>
+    <body>
+
+        <header>
+            <a href="#" class="logo"><img src="img/logo.png" alt="Logo"></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <ul>
+                        <li><a href="index.html">Hlavní stránka</a></li>
+                        <li><a href="#tabory">Nabídka táborů</a></li>
+                        <li><a href="#tabor">Příměšťáky</a></li>
+                        <li><a href="#foto">Fotogalerie</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="home2" id="home">
+            <div class="container2">
+                <div class="home-text2">
+                    <h3>Příměstské tábory v roce</h3>
+                    <h1><span>2024</span></h1>
+                </div>
+                <div class="home-image2">
+                    <img src="img/About.png" alt="Obrázek vzdělávací agentury">
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="lessons" id="tabory">
+            <div class="container3">
+                <div class="main-text">
+                    <h2>Výpis našich táborů</h2>
+                </div>
+                <div class="filters">
+                    <label for="city-filter">Město:</label>
+                    <select id="city-filter">
+                        <option value="all">Vše</option>
+                        <option value="Černošice">Černošice</option>
+                        <option value="Hostivice">Hostivice</option>
+                        <option value="Říčany">Říčany</option>
+                        <!-- Další města -->
+                    </select>
+    
+                    <button id="filter-button">Filtrovat</button>
+                </div>
+                <div class="lessons-table">
+                    <table>
+                        <thead>
+                            <tr class="hlava">
+                                <th>Téma</th>
+                                <th>Město</th>
+                                <th>Termín</th>
+                                <th>Cena</th>
+                                <th>Stav</th>
+                                <th>Letáček</th>
+                                <!--<th>Čas</th><th>Termín/počet lekcí</th>-->
+                            </tr>
+                        </thead>
+                        <tbody id="lessons-body">
+                            <!-- Ukázkový řádek -->
+                            <tr>
+                                <td data-label="Téma">Harry Potter</td>
+                                <td data-label="Město">Říčany</td>
+                                <td data-label="Termín">22.-26.07.</td>
+                                <td data-label="Cena">3999 Kč</td>
+                                <td data-label="Stav">Termín je obsazen</td>
+                                <td data-label="Letáček">
+                                    <a href="img/Tábory/Harry Potter plakát Říčany.png" class="signup-btn" data-lightbox="Harry Potter plakát Říčany">
+                                        Rozklikněte
+                                    </a>
+                                </td>
+                            </tr>
+                            <!-- Další řádky budou přidány zde -->
+                            <tr>
+                                <td data-label="Téma">Harry Potter</td>
+                                <td data-label="Město">Hostivice</td>
+                                <td data-label="Termín">05.-09.08.</td>
+                                <td data-label="Cena">3999 Kč</td>
+                                <td data-label="Stav">Termín je obsazen</td>
+                                <td data-label="Letáček">
+                                    <a href="img/Tábory/Harry Potter plakát Hostivice.png" class="signup-btn" data-lightbox="Harry Potter plakát Hostivice">
+                                        Rozklikněte
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="tabor">
+            <div class="about-img">
+                <img src="img/indiv.png" alt="Obrázek Individuální lekce">
+            </div>
+        
+            <div class="about-text">
+                <h2>Příměstské tábory</h2>
+                <h4>Super zážitky každým dnem!</h4>
+                <p>Tábory se snažíme každým rokem inovovat a přinášet to nejlepší pro Vaše děti.<br /><br />
+                    Na táborech se snažíme vytvářet přátelské prostředí doplněné o angličtinu, kdy různé aktivity jsou právě v angličtině.<br /><br />
+                    Čerstvý vzduch a zdravé jídlo na prvním místě!<br /><br />
+                    Každým rokem se snažíme dětem přinést různá zajímavá témata, která je budou zaručeně bavit.
+                </p>
+                <div class="about-gri">
+                    <div class="about-in">
+                        <h5>1. Tábory na zajímavá témata</h5>
+                    </div>
+        
+                    <div class="about-in">
+                        <h5>2. Garantovaná spokojenost a bezpečí dětí</h5>
+                    </div>
+        
+                    <div class="about-in">
+                        <h5>3. Celodenní výlet a plavání součástí</h5>
+                    </div>
+        
+                    <div class="about-in">
+                        <h5>4. Cena za tábory je vždy konečná a zahrnuje stravu, náklady za všechny aktivity a pomůcky</h5>
+                    </div>
+                </div>
+                <a href="#tabory" class="btn">Výpis táborů</a>
+            </div>
+        </section>
+
+        <section class="about" id="foto">
+
+            <div class="about-text">
+                <h2>Fotogalerie</h2>
+                <h4>Podívejte se na to, jak to u nás vypadá, když táborujeme!</h4>
+                <p>Kliknutím níže se dostanete do naší galerie, ve které si můžete prohlédnout, jak to vypadá na našich táborech.<br /><br />
+                    Již v minulých letech jsme pořádali řadu příměstských táborů.<br /><br />
+                    Nabídku táborů naleznete v sekcí výše.<br /><br />
+                </p>
+                <a href="#" class="btn">Fotogalerie</a>
+            </div>
+
+            <div class="about-img mirror">
+                <img src="img/skup.png" alt="Obrázek Skupinové lekce">
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-text">
+                <h2>Kontaktujte nás</h2>
+                <h4>Máte na nás otázky?</h4>
+                <!--<p>Pokud máte jakékoli dotazy nebo zájem o naše vzdělávací služby, neváhejte nás kontaktovat. Jsme připraveni vám poskytnout veškeré potřebné informace a odpovědět na vaše dotazy. Můžete nás kontaktovat prostřednictvím telefonu, e-mailu nebo vyplněním kontaktního formuláře. Těšíme se na vaši zprávu a rádi vám pomůžeme při dosahování vašich vzdělávacích cílů.</p>-->
+                <p>Kontaktní výuka probíhá v Říčanech, Hostivici a Černošicích.<br /><br />
+                    Jakékoliv dotazy zodpovíme na níže uvedeném e-mailu či telefonních číslech.<br /><br />
+                    Využít můžete také kontaktní formulář. Po odeslání se Vám v nejbližší době ozveme.
+                </p>
+                <div class="contact-list">
+                    <ul>
+                        <li><a href="javascript:;">Hostivice - Říčany - Černošice</a></li>
+                        <li><a href="javascript:;">eruditiocz@gmail.com</a></li>
+                        <li><a href="javascript:;">+420 739 820 084</a></li>
+                        <li><a href="javascript:;">+420 776 471 888</a></li>
+                    </ul>
+                </div>
+                <!--<div class="contact-icons">
+                    <a href="https://www.instagram.com/eruditiocz/"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@eruditiocz"><i class="bx bxl-tiktok"></i></a>
+                </div>-->
+            </div>
+        
+            <div class="contact-form">
+                
+                <form action="https://formsubmit.co/eruditiocz@gmail.com" method="POST">
+                    <input name="text" type="text" placeholder="Vaše jméno" required>
+                    <input name="email" type="email" placeholder="Váš e-mail" required>
+                    <input name="telefon" type="text" placeholder="Váš telefon">
+                    <textarea name="textarea" id="textarea" cols="40" rows="10" placeholder="Text zprávy" required></textarea>
+                    <input type="submit" value="Odeslat" class="send">
+                </form>
+            </div>
+        </section>
+
+        <div class="last-text">
+            <p>&copy; Developed by Eruditio</p>
+        </div>
+
+    <!--Scroll-Top-->
+    <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+    
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--custom js link-->
+    <script src="js/script.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+
+    </body>
+</html>
